@@ -234,7 +234,7 @@ class IndexController extends Controller
             $has_seven=0;//用來計算牌組內是否有7，6,19,32,45都是7
 
             foreach($list as $list_number){
-                switch ($list_number){
+                switch ($list_number){ //其實這可以改成for($i=6;$i<=45;$i=$i+13)
                     
                     case 6:
                     echo "have 6";
